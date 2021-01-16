@@ -11,6 +11,7 @@ function Main(){
         console.log();
         ret.then(stream => {
             console.log('Got Stream:', stream);
+            lVid.srcObject = stream;
         }).catch(err => {
             console.log('Couldn\'t get access to the camera/mic:', err);
         }); 
